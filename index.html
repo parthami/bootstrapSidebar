@@ -30,23 +30,16 @@
         <div class="col-sm-3 sidenav">
             <h4>Shopping App</h4>
             <ul class ="nav nav-pills nav-stacked">
-                <li class="active">
+                <li>
                     <a href="#section1"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="#section2"><span class="glyphicon glyphicon-th" aria-hidden="true"></span> Shopping</a>
-                </li>
-                <li>
-                    <a href="#section3"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Map</a>
                 </li>
                 <li>
                     <a href="#section3"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> Account</a>
                 </li>
             </ul>
-        </div>
-        <div id="topalert" class="alert alert-success alert-dismissible fade" role="alert">
-            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <em>  Persil Bio Washing Tablets</em> has been added to your list!
         </div>
         <div class="col-sm-9">
             <h4><small>WELCOME TO THE SHOPPING APP</small></h4>
@@ -55,18 +48,34 @@
                 <div class="well">
                     <h4>Persil Bio Washing Tablets <span class="label label-default">New</span></h4>
                     <p>Bio washing tablets for outstanding cleaning on tough stains</p>
+                    <!--<div class="col-md-4">-->
+
+                    <!--</div>-->
+                </div>
+
+                    <div class="col-md-4"></div>
+
                 </div>
                 <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-6">
+                        <div id="topalert" class="alert alert-success fade" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <em>  Persil Bio Washing Tablets</em> has been added to your list!
+                        </div>
+                        <div class="btn-group-lg btn-group-vertical" style="width: 100%">
+                            <button id="addToList" type="button" class="btn btn-success">Add to List</button>
+                            <a class="btn btn-info" href="http://www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/persil-biological-tablets--colour-12kg-(20-washes)?langId=44&storeId=10151&krypto=9LBqQtNyFSks2itsJ1tArUUJCJ79hsKmjndGMjssX8DcAxF79yFuRWLRohHJjm7o4ykY6xZBtT8%2FRZdoYK8N6rHTxhQHmtdzPcUJ%2FiJThExaR1FrMWUi5jcGQf%2Fd1lytHzdY1IXuQZgUXIH%2BcBPvMk1A0N7h19PoSSgTjv5%2BBmA%3D&ddkey=http%3Agb%2Fgroceries%2Fpersil-biological-tablets--colour-12kg-%2820-washes%29">Go to Retailer website</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center">
                         <img class="img-responsive center-block" src="https://www.persil.co.uk/wp-content/uploads/2014/01/32896_Tablets_Bio-500x500.jpg">
                         <!--<div class="well well-sm">-->
                         <h2>Product Details</h2>
                     </div>
                 </div>
-                <div class="col-md-4"></div>
+                <!--<div class="col-md-4"></div>-->
             </div>
-            <hr>
+            <!--<hr>-->
 
             <div class="row">
                 <div class="col-md-4">
@@ -88,28 +97,22 @@
                         Do not ingest. If product is ingested then seek medical advice. </p>
                 </div>
                 <br/>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="btn-group-lg">
-                            <button id="addToList" type="button" class="btn btn-success">Add to List</button>
-                            <button type="button" class="btn btn-info" href="http://www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/persil-biological-tablets--colour-12kg-(20-washes)?langId=44&storeId=10151&krypto=9LBqQtNyFSks2itsJ1tArUUJCJ79hsKmjndGMjssX8DcAxF79yFuRWLRohHJjm7o4ykY6xZBtT8%2FRZdoYK8N6rHTxhQHmtdzPcUJ%2FiJThExaR1FrMWUi5jcGQf%2Fd1lytHzdY1IXuQZgUXIH%2BcBPvMk1A0N7h19PoSSgTjv5%2BBmA%3D&ddkey=http%3Agb%2Fgroceries%2Fpersil-biological-tablets--colour-12kg-%2820-washes%29">Go to Retailer website</button>
-                        </div>
-                    </div>
-                    <div class="col-md-4"></div>
-                    <div class="col-md-4">
-                        <div class="form-group-lg">
-                            <label for="sell">Select Retailer:</label>
-                            <select class="form-control" id="sell">
-                                <option>Sainsbury</option>
-                                <option>Tesco</option>
-                                <option>Asda</option>
-                                <option>Aldi</option>
-                            </select>
-                        </div>
+                <hr>
+                <div class="col-md-4">
+                    <label for="sell">Select Retailer:</label>
+                    <div class="form-group-lg">
+                        <select class="form-control" id="sell">
+                            <option>Sainsbury</option>
+                            <option>Tesco</option>
+                            <option>Asda</option>
+                            <option>Aldi</option>
+                        </select>
                     </div>
                 </div>
             </div>
         </div>
+    <div class="col-md-12 text-center">
+        <small class="text-center">Powered by Unilever</small>
     </div>
 </section>
 <!-- /#wrapper -->
