@@ -74,8 +74,21 @@
                         </div>
                         <div class="btn-group-lg btn-group-vertical" style="width: 100%">
 
-                            <button id="addToList" type="button" class="btn btn-success"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Ping to list</button>
+                            <button id="addToList" type="button" class="btn btn-success"><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Ping to List</button>
+                            <!--<button id="addToBasket" type="button" class="btn btn-info"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ping to basket</button>-->
                             <a class="btn btn-info" href="http://www.sainsburys.co.uk/shop/gb/groceries/capsules/persil-bio-laundry-capsules-x38-999g-%2838-washes%29"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ping to basket</a>
+
+                        </div>
+                        <div id="toplist">
+                            <label for="sell">Select Retailer:</label>
+                            <div class="form-group-lg">
+                                <select class="form-control" id="sell">
+                                    <option>Sainsbury</option>
+                                    <option>Tesco</option>
+                                    <option>Asda</option>
+                                    <option>Aldi</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 text-center">
@@ -133,7 +146,7 @@
                 </div>
                 <div class="col-md-4">
                     <h3><span class="glyphicon glyphicon-filter" aria-hidden="true"/> Ingredients</h3>
-                    <p> 15-30%: Anionic Surfactants, Nonionic Surfactants, Soap, <5%: Enzymes, Optical Brighteners, Perfume, Phosphonates, Alpha-Isomethyl Ionone, Benzyl Salicylate, Butylphenyl Methylpropional, Citronellol, Hexyl Cinnamal, Limonene, Linalool  </p>
+                    <p> 15-30%: Anionic Surfactants, Nonionic Surfactants, Soap, <br/><5%: Enzymes, Optical Brighteners, Perfume, Phosphonates, Alpha-Isomethyl Ionone, Benzyl Salicylate, Butylphenyl Methylpropional, Citronellol, Hexyl Cinnamal, Limonene, Linalool  </p>
                 </div>
                 <div class="col-md-4">
                     <h3><span class="glyphicon glyphicon-warning-sign" aria-hidden="true"/> Safety</h3>
@@ -145,15 +158,6 @@
                 <br/>
                 <hr>
                 <div class="col-md-4">
-                    <label for="sell">Select Retailer:</label>
-                    <div class="form-group-lg">
-                        <select class="form-control" id="sell">
-                            <option>Sainsbury</option>
-                            <option>Tesco</option>
-                            <option>Asda</option>
-                            <option>Aldi</option>
-                        </select>
-                    </div>
                 </div>
             </div>
         </div>
@@ -182,6 +186,9 @@
     $('.close').click(function () {
         $(this).parent().removeClass('in');
     })
+    $('#addToBasket').click(function () {
+        $('#toplist').addClass('in');
+    });
 </script>
 
 </body>
